@@ -20,7 +20,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: "https://a5--jolly-gaufre-12c5d0.netlify.app/",
+    origin: "https://a5--jolly-gaufre-12c5d0.netlify.app",
   })
 );
 
