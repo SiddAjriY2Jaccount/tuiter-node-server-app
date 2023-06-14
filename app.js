@@ -8,6 +8,8 @@ import AuthController from "./users/auth-controller.js";
 
 const app = express();
 const PORT = 4000;
+const allowedOrigins = ['https://a5--jolly-gaufre-12c5d0.netlify.app', 'https://localhost:3000'];
+
 // Middleware
 app.use(json());
 app.use(
@@ -20,7 +22,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: "https://a5--jolly-gaufre-12c5d0.netlify.app",
+    origin: allowedOrigins,
   })
 );
 
